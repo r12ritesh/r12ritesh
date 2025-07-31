@@ -2,8 +2,26 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-    
-    <Button text ="Go to next view" press="onPressBtn"/>
-      
+    <content>
+    <!-- <Button text ="Go to next view" press="onPressBtn"/> -->
+
+    <Text id="idTxWlcome" text="Welcome to SAP UI5" textAlign= "Center" width="100%" class= "sapMH1FontSize"></Text>
+    <!-- <Text text="This is a basic UI5 element" textAlign= "Center" width="100%" class= "owntextfontsize"></Text> -->
+    <Text text = "1. Text || 2. Label || 3.Input Field || 4.Button" width= "100%" class="sapUiSmallMarginBottom"/> 
+
+
+    <Label id="idLabel" text="Enter your name" required= "true" class= "sapUiSmallMarginBegin" ></Label>
+    <Input id="idIpname" width= "30%" maxLength= "10" value="Ritesh" class="sapUiTinyMarginBegin" ></Input>
+
+    <Button id= "idSubmit" text="Submit" type= "Emphasized" class= " sapUiTinyMarginBegin" press="onSubmitPress"></Button>
+
+    </content>
+    <footer>
+     <Bar>
+        <contentRight>
+            <Button text ="Go to next view" type= "Emphasized" press="onPressBtn"/>
+        </contentRight>
+     </Bar>
+    </footer>
     </Page>
 </mvc:View>
