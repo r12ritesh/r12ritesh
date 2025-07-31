@@ -1,0 +1,7 @@
+<mvc:View controllerName="com.sap.project2.learn.project2.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Button text="Go back to view1" press="OnGoBackBtn"/>
+    </Page>
+</mvc:View>

@@ -1,0 +1,9 @@
+<mvc:View controllerName="com.sap.project.learn.projectlearn.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    
+    <Button text ="Go to next view" press="onPressBtn"/>
+      
+    </Page>
+</mvc:View>
