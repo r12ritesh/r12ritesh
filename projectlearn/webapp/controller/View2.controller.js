@@ -6,8 +6,7 @@ sap.ui.define([
     return Controller.extend("com.sap.project.learn.projectlearn.controller.View2", {
         onInit() {
         },
-        onPressBack : function(){
-            // this.getOwnerComponent().getRouter().navTo("RouteView1");
+        onPressBtnViewFooter: function(){
             history.go(-1);
         }
     });

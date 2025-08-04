@@ -6,9 +6,11 @@
 >
     <Page
         id="page"
-        title="View2 {i18n>title}"
+        title=" LAYOUT : Grid Layout"
     >
         <content>
+            <Text id="idTxGridLayout" text="Grid Layout" textAlign= "Center" width="100%" class= "sapMH1FontSize"></Text>
+
             <Panel
                 headerText="Employee Details"
                 expandable="true"

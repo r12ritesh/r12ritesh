@@ -86,7 +86,14 @@
           "target": [
             "TargetView2"
              ]
-            }
+            },
+            {
+              "name": "RouteFormLayout",
+              "pattern": "Third View",
+              "target": [
+                "TargetFormLayout"
+                 ]
+                }
         ],
 
       "targets": {
@@ -97,6 +104,10 @@
         "TargetView2": {
           "id": "View2",
           "name": "View2"
+        },
+        "TargetFormLayout": {
+          "id": "FormLayout",
+          "name": "FormLayout"
         }
       }
     },

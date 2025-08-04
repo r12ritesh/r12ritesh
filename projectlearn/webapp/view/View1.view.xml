@@ -19,7 +19,8 @@
     <footer>
      <Bar>
         <contentRight>
-            <Button text ="Go to next view" type= "Emphasized" press="onPressBtn"/>
+            <Button text ="Grid Layout" type= "Emphasized" press="onPressBtn"/>
+            <Button text ="Simple Form Layout" type= "Emphasized" press="onPressBtnSimpleForm"/>
         </contentRight>
      </Bar>
     </footer>

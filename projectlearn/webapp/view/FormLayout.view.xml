@@ -1,0 +1,51 @@
+<mvc:View controllerName="com.sap.project.learn.projectlearn.controller.FormLayout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l= "sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:c="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="Simple Form Layout">
+    <content>
+    <Text id="idTxSimpleForm" text="Simple Form Layout" textAlign= "Center" width="100%" class= "sapMH1FontSize"></Text>
+
+    <f:SimpleForm title="Employee Details" editable="true" layout="ResponsiveGridLayout"
+                    labelSpanL="5" labelSpanM="5" emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="2">
+    <f:content>
+    <c:Title text="Basic Details"></c:Title> 
+    <Label text= "Emplyee Id "></Label>
+    <Input ></Input>
+    <Label text= "Emplyee Name"></Label>
+    <Input ></Input>
+    <Label text= "Emplyee Designation"></Label>
+    <Input ></Input>
+
+    <c:Title text="Contact Details"></c:Title> 
+    <Label text= "Emplyee Email"></Label>
+    <Input ></Input>
+    <Label text= "Emplyee Phone No. "></Label>
+    <Input ></Input>
+
+    <c:Title text="Contact Details"></c:Title> 
+
+    <Label text= "Emplyee Skill"></Label>
+    <Input ></Input>
+    
+    </f:content>
+    
+    </f:SimpleForm>
+    </content>
+    <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        id="idBtnViewFooter"
+                        text="Go Back"
+                        type="Emphasized"
+                        class="sapUiSmallMarginEnd"
+                        press="onPressFormBack"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
