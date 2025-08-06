@@ -3,7 +3,6 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
     <content>
-    <!-- <Button text ="Go to next view" press="onPressBtn"/> -->
 
     <Text id="idTxWlcome" text="Welcome to SAP UI5" textAlign= "Center" width="100%" class= "sapMH1FontSize"></Text>
     <!-- <Text text="This is a basic UI5 element" textAlign= "Center" width="100%" class= "owntextfontsize"></Text> -->
@@ -15,6 +14,12 @@
 
     <Button id= "idSubmit" text="Submit" type= "Emphasized" class= " sapUiTinyMarginBegin" press="onSubmitPress"></Button>
 
+    <VBox >
+    <Button text="1. Grid Layout" type="Emphasized" class="sapUiTinyMarginBegin" press= "onPressBtn"/>
+    <Button text ="2. Simple Form Layout" type= "Emphasized" class= "sapUiTinyMarginBegin" press="onPressBtnSimpleForm"/>
+    <Button text ="3. ObjectHeader and IconTabBar" type= "Emphasized" class= "sapUiTinyMarginBegin" press="onPressBtnObjHeadrIcnTbBar"/>
+    
+    </VBox>
     </content>
     <footer>
      <Bar>

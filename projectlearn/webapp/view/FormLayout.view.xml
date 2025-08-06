@@ -12,10 +12,15 @@
                     labelSpanL="5" labelSpanM="5" emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="2">
     <f:content>
     <c:Title text="Basic Details"></c:Title> 
-    <Label text= "Emplyee Id "></Label>
-    <Input ></Input>
+    <Label id="idewployeeid" text= "Emplyee Id " required="true"></Label>
+    <Input id="idipemployeeid" maxLength="10"></Input>
+
+    
     <Label text= "Emplyee Name"></Label>
-    <Input ></Input>
+    <Input id="idEmpName"></Input>
+
+
+    
     <Label text= "Emplyee Designation"></Label>
     <Input ></Input>
 
@@ -33,6 +38,19 @@
     </f:content>
     
     </f:SimpleForm>
+    <!-- <VBox >
+    <HBox >
+    <Button text="HBox1" class="sapUiTinyMarginEnd"></Button>
+    <Button text="HBox2"></Button>
+    </HBox>
+    <HBox >
+    <Button text="HBox3" class= "sapUiTinyMarginEnd"></Button>
+    <Button text="HBox4"></Button>
+    </HBox>
+    </VBox> -->
+    <FlexBox justifyContent="End">
+    <Button id="idsubmitForm" text="Submit Form" type="Emphasized" press= "onsubmitForm"></Button>
+    </FlexBox>
     </content>
     <footer>
             <Bar>
@@ -43,6 +61,12 @@
                         type="Emphasized"
                         class="sapUiSmallMarginEnd"
                         press="onPressFormBack"
+                    />
+                      <Button
+                        text="Next page"
+                        type="Emphasized"
+                        class="sapUiSmallMarginEnd"
+                        press="onPressNextPage"
                     />
                 </contentRight>
             </Bar>

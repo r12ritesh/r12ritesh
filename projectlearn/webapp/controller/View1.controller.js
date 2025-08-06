@@ -13,6 +13,9 @@ sap.ui.define([
         onPressBtnSimpleForm: function(){
             this.getOwnerComponent().getRouter().navTo("RouteFormLayout");       
          },
+         onPressBtnObjHeadrIcnTbBar: function(){
+            this.getOwnerComponent().getRouter().navTo("RouteView4");
+         },
         onSubmitPress: function(){
      // Change the text to Welcome to Name when user click on submit button
            var sMessage= "Welcome to " + this.getView().byId("idIpname").getValue();

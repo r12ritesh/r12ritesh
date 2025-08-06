@@ -3,15 +3,19 @@ sap.ui.define([
 ], (Controller) => {
     "use strict";
 
-    return Controller.extend("com.sap.project.learn.projectlearn.controller.View2", {
+    return Controller.extend("com.sap.project.learn.projectlearn.controller.View4", {
         onInit() {
         },
-        onPressBtnViewFooter: function(){
+        // Logic to navigate to 2nd view
+        onPressGoBackBtn : function(){
             history.go(-1);
         },
         onPressBtnSimpleForm: function(){
             this.getOwnerComponent().getRouter().navTo("RouteFormLayout");       
          }
-   
+     
     });
+
 });
+
+

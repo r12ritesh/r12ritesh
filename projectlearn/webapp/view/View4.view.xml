@@ -1,0 +1,66 @@
+<mvc:View
+    controllerName="com.sap.project.learn.projectlearn.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <ObjectHeader
+                title="Ritesh Kumar"
+                number="5000"
+                numberUnit="INR"
+                backgroundDesign="Solid"
+            >
+                <attributes>
+                    <ObjectAttribute
+                        title="Employee Id"
+                        text="213858"
+                    />
+                    <ObjectAttribute
+                        title="Designation"
+                        text="Team Lead"
+                    />
+                </attributes>
+                <statuses>
+                    <ObjectStatus
+                        text="PERMANENT"
+                        state="Success"
+                    />
+                    <ObjectStatus
+                        text="CONTRACTUAL"
+                        state="Error"
+                    />
+                </statuses>
+            </ObjectHeader>
+            <IconTabBar>
+                <items>
+                    <IconTabFilter icon="sap-icon://information">
+                        <Text text="This is tab 1, I am information tab" />
+                    </IconTabFilter>
+                    <IconTabFilter icon="sap-icon://notes">
+                        <Text text="This is tab 2, I am notes tab" />
+                    </IconTabFilter>
+                    <IconTabFilter icon="sap-icon://attachment">
+                        <Text text="This is tab 3, I am attachment tab" />
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        text="Go Back"
+                        type="Emphasized"
+                        press="onPressGoBackBtn"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
