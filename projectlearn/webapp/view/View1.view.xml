@@ -18,6 +18,7 @@
     <Button text="1. Grid Layout" type="Emphasized" class="sapUiTinyMarginBegin" press= "onPressBtn"/>
     <Button text ="2. Simple Form Layout" type= "Emphasized" class= "sapUiTinyMarginBegin" press="onPressBtnSimpleForm"/>
     <Button text ="3. ObjectHeader and IconTabBar" type= "Emphasized" class= "sapUiTinyMarginBegin" press="onPressBtnObjHeadrIcnTbBar"/>
+    <Button text ="4. CRUD Q Operatioins" type= "Emphasized" class= "sapUiTinyMarginBegin" press="onPressBtnCRUDQopr"/>
     
     </VBox>
     </content>

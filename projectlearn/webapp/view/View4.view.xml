@@ -59,6 +59,11 @@
                         type="Emphasized"
                         press="onPressGoBackBtn"
                     />
+                    <Button
+                        text="Next Page"
+                        type="Emphasized"
+                        press="onPressGoNextBtn"
+                    />
                 </contentRight>
             </Bar>
         </footer>

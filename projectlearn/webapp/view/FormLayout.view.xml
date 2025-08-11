@@ -56,7 +56,7 @@
             <Bar>
                 <contentRight>
                     <Button
-                        id="idBtnViewFooter"
+                        id="idBtnViewFormFooter"
                         text="Go Back"
                         type="Emphasized"
                         class="sapUiSmallMarginEnd"

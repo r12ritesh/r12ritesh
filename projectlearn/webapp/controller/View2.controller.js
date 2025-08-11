@@ -7,7 +7,7 @@ sap.ui.define([
         onInit() {
         },
         onPressBtnViewFooter: function(){
-            history.go(-1);
+          history.go(-1);
         },
         onPressBtnSimpleForm: function(){
             this.getOwnerComponent().getRouter().navTo("RouteFormLayout");       

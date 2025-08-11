@@ -14,6 +14,17 @@
       "id": "@sap/generator-fiori:basic",
       "version": "1.18.3",
       "toolsId": "06cc8d20-9484-4781-a714-e5d87b2d5238"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/V2/northwind/Northwind.svc/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
     }
   },
   "sap.ui": {
@@ -51,6 +62,11 @@
         "settings": {
           "bundleName": "com.sap.project.learn.projectlearn.i18n.i18n"
         }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
       }
     },
     "resources": {
@@ -85,24 +101,30 @@
           "pattern": "Second View",
           "target": [
             "TargetView2"
-             ]
-            },
-            {
-              "name": "RouteFormLayout",
-              "pattern": "Third View",
-              "target": [
-                "TargetFormLayout"
-                 ]
-            },
-            {
-              "name": "RouteView4",
-              "pattern": "Fourth View",
-              "target": [
-                "TargetView4"
-               ]
-            }
-        ],
-
+          ]
+        },
+        {
+          "name": "RouteFormLayout",
+          "pattern": "Third View",
+          "target": [
+            "TargetFormLayout"
+          ]
+        },
+        {
+          "name": "RouteView4",
+          "pattern": "Fourth View",
+          "target": [
+            "TargetView4"
+          ]
+        },
+        {
+          "name": "RouteView5",
+          "pattern": "Fifth View",
+          "target": [
+            "TargetView5"
+          ]
+        }
+      ],
       "targets": {
         "TargetView1": {
           "id": "View1",
@@ -119,10 +141,13 @@
         "TargetView4": {
           "id": "View4",
           "name": "View4"
+        },
+        "TargetView5": {
+          "id": "View5",
+          "name": "CRUDQ"
         }
       }
     },
-
     "rootView": {
       "viewName": "com.sap.project.learn.projectlearn.view.App",
       "type": "XML",

@@ -1,0 +1,67 @@
+<mvc:View
+    controllerName="com.sap.project.learn.projectlearn.controller.CRUDQ"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        id="pageCRUDQ"
+        title="{i18n>title}"
+    >
+        <content>
+            <Text
+                id="idCRUDQ"
+                text="CRUD Q Operations"
+                textAlign="Center"
+                width="100%"
+                class="sapMH1FontSize"
+            />
+
+            <Table items="{/Employees}" sticky="eaderToolbar">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="Employee List" />
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column >
+                    <Text text="Emp ID"></Text>
+                    </Column>
+                    <Column >
+                    <Text text= "Employee Name"></Text>
+                    </Column>
+                    <Column >
+                    <Text text= "Country"></Text>
+                    </Column>
+                    <Column >
+                    <Text text= "City"></Text>
+                    </Column>
+                </columns>
+                <items>
+                <ColumnListItem >
+                <cells>
+                <Text text="{EmployeeID}"></Text>
+                <Text text="{FirstName}"></Text>
+                <Text text="{Country}"></Text>
+                <Text text="{City}"></Text>
+                </cells></ColumnListItem>
+                </items>
+            </Table>
+        </content>
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        text="Back"
+                        type="Emphasized"
+                        press="onPressBackBtn"
+                    />
+                    <Button
+                        text="Next Page"
+                        type="Emphasized"
+                        press=""
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

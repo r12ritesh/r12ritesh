@@ -5,7 +5,7 @@
     xmlns="sap.m"
 >
     <Page
-        id="page"
+        id="pageView2"
         title=" LAYOUT : Grid Layout"
     >
         <content>
