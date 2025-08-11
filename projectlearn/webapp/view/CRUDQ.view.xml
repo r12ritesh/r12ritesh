@@ -16,7 +16,7 @@
                 class="sapMH1FontSize"
             />
 
-            <Table items="{/Employees}" sticky="eaderToolbar">
+            <Table items="{/Employees}" sticky="HeaderToolbar">
                 <headerToolbar>
                     <Toolbar>
                         <Title text="Employee List" />
