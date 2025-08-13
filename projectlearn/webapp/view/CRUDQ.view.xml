@@ -46,6 +46,37 @@
                 </cells></ColumnListItem>
                 </items>
             </Table>
+
+                <Table items="{custjsonModel>/customers}" sticky="HeaderToolbar">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="Customer List" />
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column >
+                    <Text text="Cust ID"></Text>
+                    </Column>
+                    <Column >
+                    <Text text= "Customer Name"></Text>
+                    </Column>
+                    <Column >
+                    <Text text= "Country"></Text>
+                    </Column>
+                    <Column >
+                    <Text text= "Phone"></Text>
+                    </Column>
+                </columns>
+                <items>
+                <ColumnListItem >
+                <cells>
+                <Text text="{custjsonModel>customerId}"></Text>
+                <Text text="{custjsonModel>contactName}"></Text>
+                <Text text="{custjsonModel>country}"></Text>
+                <Text text="{custjsonModel>phone}"></Text>
+                </cells></ColumnListItem>
+                </items>
+            </Table>
         </content>
         <footer>
             <Bar>

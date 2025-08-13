@@ -1,0 +1,20 @@
+{
+  "customers": [
+    {
+  "customerId": "C12345",
+  "contactName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "phone": "+1-555-123-4567",
+  "country": "India"
+   },
+   {
+ "customerId": "C56789",
+  "contactName": "Vein",
+  "lastName": "Diesel",
+  "email": "john.doe@diesel.com",
+  "phone": "+1-555-123-7890",
+  "country": "USA"
+   }
+  ]
+}
