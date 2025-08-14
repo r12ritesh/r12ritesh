@@ -66,6 +66,9 @@
                     <Column >
                     <Text text= "Phone"></Text>
                     </Column>
+                    <Column >
+                    <Text text= "Country"></Text>
+                    </Column>
                 </columns>
                 <items>
                 <ColumnListItem >
@@ -74,6 +77,7 @@
                 <Text text="{custjsonModel>contactName}"></Text>
                 <Text text="{custjsonModel>country}"></Text>
                 <Text text="{custjsonModel>phone}"></Text>
+                <Text text="{custjsonModel>country}"></Text>
                 </cells></ColumnListItem>
                 </items>
             </Table>
