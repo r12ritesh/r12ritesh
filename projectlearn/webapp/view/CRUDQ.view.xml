@@ -47,6 +47,37 @@
                 </items>
             </Table>
 
+            <Table items="{ojsonOdataModel>/results}" sticky="HeaderToolbar">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="Order List" />
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column >
+                    <Text text="OrderID"></Text>
+                    </Column>
+                    <Column >
+                    <Text text= "Ship Name"></Text>
+                    </Column>
+                    <Column >
+                    <Text text= "Ship Country"></Text>
+                    </Column>
+                    <Column >
+                    <Text text= "Ship City"></Text>
+                    </Column>
+                </columns>
+                <items>
+                <ColumnListItem >
+                <cells>
+                <Text text="{ojsonOdataModel>OrderID}"></Text>
+                <Text text="{ojsonOdataModel>ShipName}"></Text>
+                <Text text="{ojsonOdataModel>ShipCountry}"></Text>
+                <Text text="{ojsonOdataModel>ShipCity}"></Text>
+                </cells></ColumnListItem>
+                </items>
+            </Table> 
+
                 <Table items="{custjsonModel>/customers}" sticky="HeaderToolbar">
                 <headerToolbar>
                     <Toolbar>

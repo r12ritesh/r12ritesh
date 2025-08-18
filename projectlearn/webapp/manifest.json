@@ -68,6 +68,9 @@
         "preload": true,
         "settings": {}
       },
+      "jsonodatamodel": {
+         "type": "sap.ui.model.json.JSONModel"
+      },
      
       "custjsonModel":{
         "type": "sap.ui.model.json.JSONModel",
