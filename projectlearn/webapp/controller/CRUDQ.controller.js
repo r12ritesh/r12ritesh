@@ -1,10 +1,12 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], (Controller) => {
+    "sap/ui/core/mvc/Controller",
+    "com/sap/project/learn/projectlearn/model/formatter"
+], function(Controller, formatter) {
     "use strict";
 
     return Controller.extend("com.sap.project.learn.projectlearn.controller.CRUDQ", {
-        onInit() {
+        f: formatter,
+        onInit() { 
 
         },
         // Logic to navigate to previous view

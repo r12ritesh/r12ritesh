@@ -30,6 +30,9 @@
                     <Text text= "Employee Name"></Text>
                     </Column>
                     <Column >
+                    <Text text= "Birth Date"></Text>
+                    </Column>
+                    <Column >
                     <Text text= "Country"></Text>
                     </Column>
                     <Column >
@@ -40,13 +43,14 @@
                 <ColumnListItem >
                 <cells>
                 <Text text="{EmployeeID}"></Text>
-                <Text text="{FirstName}"></Text>
-                <Text text="{Country}"></Text>
+                <Text text="{path: 'FirstName', formatter: '.f.formatName'}"></Text>
+                <Text text="{path: 'BirthDate', formatter: '.f.formatBirthDate'}"></Text>
+                <ObjectStatus text="{Country}" state="{path: 'Country', formatter: '.f.formatColourCountry'}"></ObjectStatus>
                 <Text text="{City}"></Text>
                 </cells></ColumnListItem>
                 </items>
             </Table>
-
+            <ScrollContainer vertical="true" horizontal="true">
             <Table items="{ojsonOdataModel>/results}" sticky="HeaderToolbar">
                 <headerToolbar>
                     <Toolbar>
@@ -54,22 +58,26 @@
                     </Toolbar>
                 </headerToolbar>
                 <columns>
-                    <Column >
+                    <Column width="5rem">
+                    <Text text="SNo"></Text>
+                    </Column>
+                    <Column width="10rem">
                     <Text text="OrderID"></Text>
                     </Column>
-                    <Column >
+                    <Column width="10rem">
                     <Text text= "Ship Name"></Text>
                     </Column>
-                    <Column >
+                    <Column width="10rem">
                     <Text text= "Ship Country"></Text>
                     </Column>
-                    <Column >
+                    <Column width="10rem">
                     <Text text= "Ship City"></Text>
                     </Column>
                 </columns>
                 <items>
                 <ColumnListItem >
                 <cells>
+                <Text text="{ojsonOdataModel>SNo}"></Text>
                 <Text text="{ojsonOdataModel>OrderID}"></Text>
                 <Text text="{ojsonOdataModel>ShipName}"></Text>
                 <Text text="{ojsonOdataModel>ShipCountry}"></Text>
@@ -77,8 +85,9 @@
                 </cells></ColumnListItem>
                 </items>
             </Table> 
+            </ScrollContainer>
 
-                <Table items="{custjsonModel>/customers}" sticky="HeaderToolbar">
+            <Table items="{custjsonModel>/customers}" sticky="HeaderToolbar">
                 <headerToolbar>
                     <Toolbar>
                         <Title text="Customer List" />

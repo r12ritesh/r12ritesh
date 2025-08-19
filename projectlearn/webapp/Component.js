@@ -29,6 +29,9 @@ sap.ui.define([
             // ojsonOdataModel= this.getModel("jsonodatamodel");           // This gives the JSON moodel
             oOdataModel.read("/Orders", {
                 success: function(data) {
+                    for(var i=0; i<data.results.length; i++){
+                    data.results[i].SNo=i+1;
+                    }
                     ojsonOdataModel.setData(data);
                     console.log("Orders loaded", data);
                 },
